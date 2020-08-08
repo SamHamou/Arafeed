@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div id="front-page" class="container">
+  <section class="section">
+    <h2>{{ .Title }}</h2>
+    {{ partial "categories-list.html"  . }}
+    {{ partial "post-list.html"  . }}
+  </section>
+</div>
+{{ end }}
