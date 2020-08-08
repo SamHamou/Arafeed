@@ -7,7 +7,7 @@ categories:
 tags:
   - css
   - preprocessor
-image: /images/notes.webp
+thumbnail: /images/notes.webp
 ---
 
 يعلم الجميع مدى أهمية لغة **CSS** في بناء تطبيقات الويب وإعطائها الرونق والجمال اللذان يجذبان الزائر أوالمستعمل ويؤثران فيه، ولهذا لايمكننا تخيل الويب من دون CSS ورفيقتها الدائمة **HTML**.
