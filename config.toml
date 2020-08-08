@@ -3,6 +3,7 @@ baseurl = "/"
 title = "Arafeed"
 themesDir = "themes"
 theme = "Feed"
+paginate = 7
 assetDir = "static"
 
 summarylength = 20
