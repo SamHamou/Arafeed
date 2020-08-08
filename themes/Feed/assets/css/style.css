@@ -17,11 +17,6 @@ nav,
 section {
 	display: block;
 }
-html[dir="rtl"] {
-  body {
-    text-align: right;
-  }
-}
 
 :focus::-webkit-input-placeholder {
 	color: transparent;
@@ -41,6 +36,8 @@ html[dir="rtl"] {
 
 /* Structure */
 html {
+	direction: rtl;
+	text-align: right;
 	font-size: 100%;
 	-ms-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
