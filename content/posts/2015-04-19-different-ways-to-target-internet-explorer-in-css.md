@@ -8,7 +8,7 @@ categories:
 tags:
   - Internet Explorer
   - إنترنت إكسبلورر
-image: /images/notes.webp
+thumbnail: /images/notes.webp
 
 ---
 

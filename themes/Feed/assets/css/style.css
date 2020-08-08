@@ -130,7 +130,8 @@ textarea {
 	font-weight: 700;
 	color: #fff;
 	white-space: pre-line;
-	background: #2a2a2a;
+	background: #34548d;
+    margin-top: -5%;
 }
 
 .btn:hover {
@@ -624,7 +625,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta__item {
-	display: inline;
+	display: block;
 	margin-right: 15px;
 }
 
@@ -673,7 +674,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .content.post__content {
-    padding: 20px 0px;
+    padding: 0px 0px;
+	font-size: 13px;
 }
 
 .content a,
@@ -906,11 +908,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .list__thumbnail img {
 	width: 100%;
-	max-width: 60px;
+	max-width: 250px;
+    height: 150px;
 }
 
 .list__footer-readmore {
-	float: left;
+	float: right;
 }
 
 /* Pagination */

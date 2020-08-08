@@ -9,7 +9,7 @@ tags:
   - aws
   - cloudfront
   - s3
-image: /images/image.png
+thumbnail: /images/image.png
 ---
 
 تعتبر خدمات الويب لأمازون Amazon Web Services الأكثر تطورا والأكثر استعمالا من طرف مختلف الفاعلين على الإنترنت من شركات ومطورين منذ ظهورها عام 2006، وتضم AWS حزمة من الخدمات والمنتجات لعل أشهرها منتجين اثنين : **S3** و **Cloudfront**.
