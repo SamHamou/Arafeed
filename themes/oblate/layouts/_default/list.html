@@ -1,9 +1,0 @@
-{{ define "main" }}
-<div id="front-page" class="container">
-  <section class="section">
-    <h2>{{ .Site.Params.articles | default "Articles" }}</h2>
-    {{ partial "categories-list.html"  . }}
-    {{ partial "post-list.html"  . }}
-  </section>
-</div>
-{{ end }}
