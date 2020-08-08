@@ -2,7 +2,7 @@
 baseurl = "/"
 title = "Arafeed"
 themesDir = "themes"
-theme = "Main"
+theme = "Feed"
 assetDir = "static"
 
 [outputs]
