@@ -1,6 +1,5 @@
 # Site settings
-baseurl = "https://arafeed.netlify.app/"
-languageCode = "en-us"
+baseurl = "/"
 title = "Oblate"
 themesDir = "themes"
 theme = "hugo"
