@@ -30,21 +30,7 @@ disqusShortname = ""
     github   = "https://www.github.com/zapatran"
 		instagram = "https://www.instagram.com/"
 
-[languages]
-  [languages.en]
-    weight = 1
-    languageName = "🇺🇸"
-    projects = "Projects"
-    contentDir = "content/english"
-    articles = "Articles"
-    latestPosts = "Lastest posts"
-  [languages.es]
-    weight = 2
-    languageName = "🇪🇸"
-    projects = "Proyectos"
-    contentDir = "content/spanish"
-    articles = "Artículos"
-    latestPosts = "Últimas entradas"
+
 
 [outputFormats.Algolia]
 baseName = "algolia"
