@@ -1,8 +1,8 @@
 # Site settings
 baseurl = "/"
-title = "Oblate"
+title = "Arafeed"
 themesDir = "themes"
-theme = "Feed"
+theme = "Main"
 assetDir = "static"
 
 [outputs]
