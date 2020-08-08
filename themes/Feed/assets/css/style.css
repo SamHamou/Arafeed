@@ -17,7 +17,11 @@ nav,
 section {
 	display: block;
 }
-p {direction: rtl;}
+html[dir="rtl"] {
+  body {
+    text-align: right;
+  }
+}
 
 :focus::-webkit-input-placeholder {
 	color: transparent;
