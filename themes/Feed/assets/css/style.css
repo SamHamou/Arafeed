@@ -17,7 +17,7 @@ nav,
 section {
 	display: block;
 }
-dir:rtl
+direction: rtl;
 }
 :focus::-webkit-input-placeholder {
 	color: transparent;
