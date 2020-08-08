@@ -11,3 +11,51 @@ disqusShortname = ""
 [taxonomies]
   category = "categories"
 
+[params]
+  # for meta porpouses
+  name = "John Doe"
+	description = "Describe your website"
+  enableRSS = true
+  subscribe = ""
+  # you can use emoji or image params for displaying icons near the title 
+  emoji = "👨🏻‍💻"
+  # image = "/images/floppy.png"
+  customCSS = ['css/main.css']
+  emojicom = ""
+  copyright = false
+
+# Add additional social link entries underneath
+[social]
+		linkedin = "https://www.linkedin.com/in/"
+    github   = "https://www.github.com/zapatran"
+		instagram = "https://www.instagram.com/"
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "🇺🇸"
+    projects = "Projects"
+    contentDir = "content/english"
+    articles = "Articles"
+    latestPosts = "Lastest posts"
+  [languages.es]
+    weight = 2
+    languageName = "🇪🇸"
+    projects = "Proyectos"
+    contentDir = "content/spanish"
+    articles = "Artículos"
+    latestPosts = "Últimas entradas"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
+[outputs]
+home = ["HTML", "RSS"]
+
