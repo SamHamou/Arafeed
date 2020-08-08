@@ -1168,6 +1168,19 @@ textarea {
 .widget-languages__link-btn {
 	display: inline-block;
 }
+/* Recent Posts Widget */
+.widget-recent__item {
+	display: flex;
+	align-items: center;
+	margin: 5px 0 5px 0;
+}
+
+.widget-recent__thumbnail {
+	float: right;
+	margin: 0 10px 0 0;
+	width: 100%;
+	max-width: 60px;
+}
 
 /* Footer */
 .footer {
