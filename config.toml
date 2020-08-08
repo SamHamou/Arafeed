@@ -5,6 +5,9 @@ themesDir = "themes"
 theme = "Feed"
 assetDir = "static"
 
+summarylength = 20
+hasCJKLanguage = true 
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
