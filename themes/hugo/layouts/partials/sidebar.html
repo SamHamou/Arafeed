@@ -31,14 +31,16 @@
 </div>
 <div class="widget">
    <ul class="list-group">
-      {{ range first 10 $.Site.Taxonomies.tags.ByCount }}
-      <a href="/tags/{{ .Name | urlize }}" class="list-group-item list-group-item-action" title="{{ .Name }}">
-         <div class="row">
-            <div class="col-12">
-               <h6 class="mb-1">{{ .Name }} ({{ .Count }})</h6>
-            </div>
-         </div>
-      </a>
+      {{ with .Site.Taxonomies.tags }}
+         {{ range first 10 .ByCount }}
+            <a href="/tags/{{ .Name | urlize }}" class="list-group-item list-group-item-action" title="{{ .Name }}">
+               <div class="row">
+                  <div class="col-12">
+                     <h6 class="mb-1">{{ .Name }} ({{ .Count }})</h6>
+                  </div>
+               </div>
+            </a>
+         {{ end }}
       {{ end }}
    </ul>
 </div>
