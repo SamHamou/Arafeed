@@ -20,46 +20,30 @@ hasCJKLanguage = true
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Home"
+    name = "الرئيسية"
     url = "/"
     weight = 1
   [[menu.main]]
     identifier = "section"
     name = "برامج ويندوز"
     url = "/windows"
-    weight = 1
-  [[menu.main]]
-    identifier = "category"
-    name = "برامج ماكنتوش"
-    url = "/mac"
-    weight = 1
-  [[menu.main]]
-    identifier = "category"
-    name = "برامج أندرويد"
-    url = "/android"
     weight = 2
   [[menu.main]]
-    identifier = "category"
+    identifier = "section"
+    name = "برامج ماكنتوش"
+    url = "/mac"
+    weight = 3
+  [[menu.main]]
+    identifier = "section"
+    name = "برامج أندرويد"
+    url = "/android"
+    weight = 4
+  [[menu.main]]
+    identifier = "section"
     name = "برامج آيفون"
     url = "/ios"
-    weight = 3
-  [[menu.main]]
-    identifier = "another-section"
-    name = "Another Section"
-    url = "/anothersection/"
-    weight = 3
-  [[menu.main]]
-    identifier = "another-category1"
-    name = "Another Category1"
-    url = "/categories/anothercategory1/"
-    parent = "another-section"
-    weight = 1
-  [[menu.main]]
-    identifier = "another-category2"
-    name = "Another Category2"
-    url = "/categories/anothercategory2/"
-    parent = "another-section"
-    weight = 2  
+    weight = 5
+  
 
 
 [Params]
