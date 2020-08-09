@@ -1,6 +1,6 @@
 # General
 - id: read_more
-  translation: "Read more…"
+  translation: "تحميل"
 
 - id: menu_label
   translation: "Menu"
@@ -39,7 +39,7 @@
 
 # Search widget
 - id: search_placeholder
-  translation: "SEARCH..."
+  translation: "إبحث ..."
 
 # Languages widget
 - id: languages_title
@@ -51,7 +51,7 @@
 
 # Recent Posts widget
 - id: recent_title
-  translation: "Recent Posts"
+  translation: "أحدث البرامج"
 
 # Social widget
 - id: social_title
@@ -59,7 +59,7 @@
 
 # Tags List widget
 - id: tags_title
-  translation: "Tags"
+  translation: "تصنيفات"
 
 # Footer
 - id: footer_credits
