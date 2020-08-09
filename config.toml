@@ -3,10 +3,10 @@ baseurl = "/"
 title = "Arafeed"
 themesDir = "themes"
 theme = "Feed"
-paginate = 7
+paginate = 6
 assetDir = "static"
 
-summarylength = 20
+summarylength = 10
 hasCJKLanguage = true 
 
 
@@ -46,11 +46,11 @@ hasCJKLanguage = true
   subtitle = "Ashish Lahoti's Technical Blog" # Subtitle of your site. Used in site header
   description = "Coding N Concepts is a technical blog for developers by developers to help you with coding problems, puzzle-solving, interview preparation, learning concepts in a simplified way." # Site description. Used in meta description
   logo = "/img/favicon.ico"
-  copyright = "CodingNConcepts" # Footer copyright holder, otherwise will use site title
+  copyright = "Arafeed" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
-  authorbox = true # Show authorbox at bottom of pages if true
+  authorbox = false # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
   post_meta = ["author", "categories"] # Order of post meta information
