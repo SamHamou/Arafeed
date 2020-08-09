@@ -61,7 +61,6 @@ body {
 }
 
 .container--outer {
-	margin: 25px auto;
 	box-shadow: 0 0 10px rgba(50, 50, 50, .17);
 }
 
@@ -785,7 +784,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .tags__link,
 .tags__link:hover {
-	display: block;
+	display: table-cell;
 	padding: 10px 15px;
 }
 

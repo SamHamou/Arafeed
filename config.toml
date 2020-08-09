@@ -20,26 +20,23 @@ hasCJKLanguage = true
     weight = 1
   [[menu.main]]
     identifier = "section"
-    name = "Section"
-    url = "/section"
-    weight = 2
-  [[menu.main]]
-    identifier = "category1"
-    name = "Category1"
-    url = "/categories/category1/"
-    parent = "section"
+    name = "برامج ويندوز"
+    url = "/windows"
     weight = 1
   [[menu.main]]
-    identifier = "category2"
-    name = "Category2"
-    url = "/categories/category2/"
-    parent = "section"
+    identifier = "category"
+    name = "برامج ماكنتوش"
+    url = "/mac"
+    weight = 1
+  [[menu.main]]
+    identifier = "category"
+    name = "برامج أندرويد"
+    url = "/android"
     weight = 2
   [[menu.main]]
-    identifier = "category3"
-    name = "Category3"
-    url = "/categories/category3/"
-    parent = "section"
+    identifier = "category"
+    name = "برامج آيفون"
+    url = "/ios"
     weight = 3
   [[menu.main]]
     identifier = "another-section"
@@ -59,9 +56,6 @@ hasCJKLanguage = true
     parent = "another-section"
     weight = 2  
 
-[Author] # Default Author
-  code = "ashishlahoti"
-  name = "Ashish Lahoti"
 
 [Params]
   title = "CodingNConcepts"
@@ -75,7 +69,7 @@ hasCJKLanguage = true
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
-  post_meta = ["author", "categories", "translations"] # Order of post meta information
+  post_meta = ["author", "categories"] # Order of post meta information
   mainSections = ["posts", "anothersection"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "January 02, 2006" # Change the format of dates
   mathjax = true # Enable MathJax
@@ -96,9 +90,9 @@ hasCJKLanguage = true
   home = "right" # Configure layout for home page
   list = "right"  # Configure layout for list pages
   search = "right"
-  single = false # Configure layout for single pages
+  single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "taglist"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
