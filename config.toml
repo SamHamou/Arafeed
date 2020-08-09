@@ -9,6 +9,12 @@ assetDir = "static"
 summarylength = 20
 hasCJKLanguage = true 
 
+
+[Author] # Used in authorbox
+  name = "John Doe"
+  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar = "img/avatar.png"
+  
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
