@@ -9,6 +9,7 @@ assetDir = "static"
 summarylength = 10
 hasCJKLanguage = true 
 
+socialshare = true
 
 [Author] # Default Author
   code = "SamHamou"

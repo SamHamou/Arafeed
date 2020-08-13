@@ -1,6 +1,7 @@
 ---
 title: '5 أمور تجعلك تفكر في استعمال معالجات CSS'
 date: '2015-08-04'
+socialshare: true
 slug: 'web-development/html-css/why-you-should-use-css-preprocessors-in-your-projects'
 categories:
   - articles
