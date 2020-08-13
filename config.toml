@@ -63,7 +63,7 @@ hasCJKLanguage = true
   # customCSS = ["css/custom.css"] # Include custom CSS files
   # customJS = ["js/custom.js"] # Include custom JS files
   
-[Params.socialshare]
+[Params.social.share]
   facebook = true
   linkedin = true
   twitter = true
