@@ -11,8 +11,8 @@ hasCJKLanguage = true
 
 
 [Author] # Default Author
-  code = "ashishlahoti"
-  name = "Ashish Lahoti"
+  code = "SamHamou"
+  name = "Sam Hamou"
   
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -63,7 +63,7 @@ hasCJKLanguage = true
   # customCSS = ["css/custom.css"] # Include custom CSS files
   # customJS = ["js/custom.js"] # Include custom JS files
   
-[Params.social.share]
+[Params.socialshare]
   facebook = true
   linkedin = true
   twitter = true
@@ -100,8 +100,6 @@ hasCJKLanguage = true
     style = "monokai"
     tabWidth = 4
 
-[social]
-  facebook = "codingnconcepts"
-  facebook_admin = "xxxxxxxxxxx"
+
 
   
