@@ -132,5 +132,8 @@ hasCJKLanguage = true
     tabWidth = 4
 
 
-
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
   
