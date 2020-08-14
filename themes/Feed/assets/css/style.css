@@ -617,7 +617,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .meta,
 .meta a {
-	color: #666;
+	color: #3abd69;
+    font-weight: bold;
 }
 
 .meta a:hover {
@@ -636,7 +637,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .meta__icon {
 	margin-left: 5px;
 	vertical-align: middle;
-	fill: #c4c4c4;
+	fill: #3abd6994;
 }
 
 .meta__text {
@@ -669,6 +670,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	width: 100px;
 	float: right;
 	margin-left: 10px;
+	border-radius: 10px;
 }
 
 .content.post__content {
@@ -1187,9 +1189,9 @@ textarea {
 	padding: 10px 25px;
 	font-size: 12px;
 	font-size: .75rem;
-	color: #58b0fb;
-	background: #464a4d;
-	border-top: 3px solid #999;
+	color: #f5f8ff;
+	background: #2e354c;
+	border-top: 3px solid #3abd69;
 }
 
 .footer__container {
