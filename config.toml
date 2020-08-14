@@ -9,7 +9,6 @@ assetDir = "static"
 summarylength = 10
 hasCJKLanguage = true 
 
-socialshare = true
 
 [Author] # Default Author
   code = "SamHamou"
@@ -44,8 +43,8 @@ socialshare = true
 
 
 [Params]
-  subtitle = "Ashish Lahoti's Technical Blog" # Subtitle of your site. Used in site header
-  description = "Coding N Concepts is a technical blog for developers by developers to help you with coding problems, puzzle-solving, interview preparation, learning concepts in a simplified way." # Site description. Used in meta description
+  subtitle = "موسوعة البرامج المجانية" # Subtitle of your site. Used in site header
+  description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
   logo = "/img/favicon.ico"
   copyright = "Arafeed" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true

@@ -3,21 +3,21 @@
   translation: "تحميل"
 
 - id: menu_label
-  translation: "Menu"
+  translation: "الأقسام"
 
 - id: sidemenu_title
-  translation: "Menu"
+  translation: "الأقسام"
 
 # Post meta
 - id: meta_lastmod
-  translation: "Last Modified"
+  translation: "آخر تعديل"
 
 - id: meta_translations
   translation: "Translations"
 
 # Table of Contents
 - id: toc_title
-  translation: "Page content"
+  translation: "محتوى الصفحة"
 
 # Post nav
 - id: post_nav_prev
@@ -64,19 +64,17 @@
 # Footer
 - id: footer_credits
   translation:
-    "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+    "Generated with <a href=\"/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> ."
 
 # 404
 - id: 404_title
-  translation: "404. Page not found"
+  translation: "404. الصفحة غير موجودة"
 
 - id: 404_text
-  translation:
-    "The page you were looking for appears to have been moved, deleted or does not exist. Please, use search or go to"
+  translation:"يبدو أن الصفحة التي كنت تبحث عنها قد تم نقلها أو حذفها أو أنها غير موجودة. من فضلك ، استخدم البحث أو انتقل إلى"
 
 - id: 404_linktext
-  translation: "main page"
+  translation: "الصفحة الرئيسية"
 
 # No posts empty state
 - id: noposts_warning_title
