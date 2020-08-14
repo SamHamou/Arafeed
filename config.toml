@@ -47,25 +47,25 @@ hasCJKLanguage = true
   [[menu.main]]
     identifier = "category1"
     name = "عن الموقع"
-    url = "/about/"
+    url = "/about"
     parent = "category"
     weight = 1
   [[menu.main]]
     identifier = "category2"
     name = "أعلن معنا"
-    url = "/ads/"
+    url = "/ads"
     parent = "category"
     weight = 2
   [[menu.main]]
     identifier = "category3"
     name = "إتصل بنا"
-    url = "/contact/"
+    url = "/contact"
     parent = "category"
     weight = 3
    [[menu.main]]
     identifier = "category4"
     name = "سياسة الخصوصية"
-    url = "/privacy/"
+    url = "/privacy"
     parent = "category"
     weight = 4
 
