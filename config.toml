@@ -43,7 +43,7 @@ hasCJKLanguage = true
     identifier = "category"
     name = "المزيد"
     url = "/"
-    weight = 2
+    weight = 6
   [[menu.main]]
     identifier = "category1"
     name = "عن الموقع"
@@ -112,6 +112,11 @@ hasCJKLanguage = true
 [taxonomies]
    tag = "tags"
    category = "categories" 
+   
+[permalinks]
+  post  = "/:slug/"
+  pages = "/:filename/"
+  categories = "/:title/"   
 
 [markup]
   [markup.goldmark.renderer]
