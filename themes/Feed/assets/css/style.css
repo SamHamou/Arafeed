@@ -135,7 +135,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: #e22d30;
+	background: #3abd69;
 }
 
 /* Animation */
@@ -197,7 +197,7 @@ a {
 }
 
 a:hover {
-	color: #e22d30;
+	color: #3abd69;
 }
 
 hr {
@@ -303,7 +303,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-right: 5px solid #e22d30;
+	border-right: 5px solid #3abd69;
 }
 
 blockquote p:last-child {
@@ -387,7 +387,7 @@ select {
 
 .logo {
 	padding: 25px;
-	background: #5C6467;
+	background: #2E354C;
 }
 
 .logo__link {
@@ -425,7 +425,7 @@ select {
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #e22d30;
+	background: #3abd69;
 	border: 0;
 }
 
@@ -462,7 +462,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px #e22d30;
+	box-shadow: inset 0 0 1px 3px #3abd69;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -475,12 +475,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: #e22d30;
+	color: #3abd69;
 }
 
 .menu__list, .submenu__list {
 	list-style: none;
-	background: #464A4D;
+	background: #373D5B;
 }
 
 .menu__item:hover > a {
@@ -492,7 +492,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: #F05D5D;
+	background: #3abd69;
 }
 
 .menu__link {
@@ -512,7 +512,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	position: absolute;
 	max-width: 15rem;
 	transition: all 0.5s ease;
-	border-top: 5px solid #e22d30;	  
+	border-top: 5px solid #3abd69;	  
 	display: none;	  
 }
 
@@ -562,7 +562,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #f05d5d;
+		border-bottom: 5px solid #3abd69;
 	}
 
 	.menu__btn {
@@ -605,7 +605,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .main__content h1, .main__header h1{
-	color: #e22d30;
+	color: #3abd69;
 	margin: 0 0 2.5rem 0;
 }
 
@@ -621,7 +621,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: #e22d30;
+	color: #3abd69;
 }
 
 .meta__item {
@@ -679,12 +679,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .content a,
 .warning a {
 	font-weight: 700;
-	color: #e22d30;
+	color: #3abd69;
 }
 
 .content a:hover,
 .warning a:hover {
-	color: #e22d30;
+	color: #3abd69;
 	text-decoration: underline;
 }
 
@@ -778,7 +778,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: #e22d30;
+	background: #3abd69;
 }
 
 .tags__link,
@@ -793,7 +793,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-left: 6px;
-	background: #e22d30;
+	background: #3abd69;
 	fill: #fff;
 }
 
@@ -847,7 +847,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: #e22d30;
+	color: #3abd69;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -906,8 +906,9 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .list__thumbnail img {
 	width: 100%;
-	max-width: 250px;
+	max-width: 220px;
     height: 150px;
+	border-radius: 15px;
 }
 
 .list__footer-readmore {
@@ -930,7 +931,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: #e22d30;
+	background: #3abd69;
 }
 
 /* Post Navigation */
@@ -1052,7 +1053,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: #e22d30;
+	background: #3abd69;
 }
 
 textarea {
@@ -1081,7 +1082,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #e22d30;
+	border-bottom: 3px solid #3abd69;
 }
 
 .widget__item {
@@ -1099,7 +1100,7 @@ textarea {
 	display: block;
 	padding: 5%;
 	margin: 0 auto;
-	background: #f05d5d;
+	background: #3abd69;
 }
 
 .widget-search__form .widget-search__submit {
@@ -1159,7 +1160,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: #e22d30;
+	background: #3abd69;
 }
 
 .widget-languages__link-btn {
@@ -1338,7 +1339,7 @@ ul.share-icons li > * .label {
 }
 
 .code_error {
-	color: #e22d30;
+	color: #3abd69;
 }
 
 .related_post_title {
