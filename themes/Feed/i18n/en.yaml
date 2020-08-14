@@ -21,10 +21,10 @@
 
 # Post nav
 - id: post_nav_prev
-  translation: "Previous"
+  translation: "السابق"
 
 - id: post_nav_next
-  translation: "Next"
+  translation: "التالي"
 
 # Authorbox
 - id: authorbox_name

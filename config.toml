@@ -42,7 +42,6 @@ hasCJKLanguage = true
    [[menu.main]]
     identifier = "category"
     name = "المزيد"
-    url = "/"
     weight = 6
   [[menu.main]]
     identifier = "category1"
