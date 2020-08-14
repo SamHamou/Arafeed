@@ -71,11 +71,11 @@ hasCJKLanguage = true
 [Params]
   subtitle = "موسوعة البرامج المجانية" # Subtitle of your site. Used in site header
   description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
-  logo = "/img/favicon.ico"
+  logo = "/img/logo.png"
   copyright = "Arafeed" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
-  readmore = true # Show "Read more" button in list if true
+  readmore = false # Show "Read more" button in list if true
   authorbox = false # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
