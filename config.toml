@@ -39,8 +39,35 @@ hasCJKLanguage = true
     name = "برامج آيفون"
     url = "/ios"
     weight = 5
-  
-
+   [[menu.main]]
+    identifier = "category"
+    name = "المزيد"
+    url = "/"
+    weight = 2
+  [[menu.main]]
+    identifier = "category1"
+    name = "عن الموقع"
+    url = "/about/"
+    parent = "category"
+    weight = 1
+  [[menu.main]]
+    identifier = "category2"
+    name = "أعلن معنا"
+    url = "/ads/"
+    parent = "category"
+    weight = 2
+  [[menu.main]]
+    identifier = "category3"
+    name = "إتصل بنا"
+    url = "/contact/"
+    parent = "category"
+    weight = 3
+   [[menu.main]]
+    identifier = "category4"
+    name = "سياسة الخصوصية"
+    url = "/privacy/"
+    parent = "category"
+    weight = 4
 
 [Params]
   subtitle = "موسوعة البرامج المجانية" # Subtitle of your site. Used in site header
