@@ -64,7 +64,7 @@
 # Footer
 - id: footer_credits
   translation:
-    "Generated with <a href=\"/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> ."
+    "بعض الحقوق محفوظة لـ <a href=\"/\" rel=\"nofollow noopener\" target=\"_blank\">موسوعة البرامج المجانية</a> ."
 
 # 404
 - id: 404_title
