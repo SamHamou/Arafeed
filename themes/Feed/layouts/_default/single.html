@@ -10,7 +10,7 @@
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
 		</header>
-		{{- partial "post_toc.html" . -}}
+		{{- partial "socialshare.html" . -}}
 		<div class="content post__content clearfix">
 			{{ .Content }}
 		</div>
@@ -21,9 +21,6 @@
 		{{- end }}
 	</article>
 </main>
-{{ partial "socialshare.html" . }}
 {{ partial "related.html" . }}
-{{ partial "authorbox.html" . }}
 {{ partial "post_nav.html" . }}
-{{ partial "comments.html" . }}
 {{ end }}
