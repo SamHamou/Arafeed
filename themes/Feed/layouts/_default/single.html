@@ -10,9 +10,10 @@
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
 		</header>
-		{{- partial "socialshare.html" . -}}
+		
 		<div class="content post__content clearfix">
 			{{ .Content }}
+			{{- partial "socialshare.html" . -}}
 		</div>
 		{{- if .Params.tags }}
 		<footer class="post__footer">
