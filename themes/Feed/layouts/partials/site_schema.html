@@ -23,7 +23,6 @@
     "headline": "{{ .Title | safeJS }}",
     "alternativeHeadline": "{{ .Params.lead }}",
     "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ .Site.LanguageCode | default "ar-SA" }},
 	"isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
