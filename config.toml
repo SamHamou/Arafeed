@@ -1,6 +1,6 @@
 # Site settings
 baseurl = "/"
-title = "Arafeed"
+title = "تحميل"
 themesDir = "themes"
 theme = "Feed"
 paginate = 6
@@ -89,12 +89,6 @@ hasCJKLanguage = true
   # customCSS = ["css/custom.css"] # Include custom CSS files
   # customJS = ["js/custom.js"] # Include custom JS files
   
-[Params.social.share]
-  facebook = true
-  linkedin = true
-  twitter = true
-  whatsapp = true
-  email = true
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -131,9 +125,3 @@ hasCJKLanguage = true
     style = "monokai"
     tabWidth = 4
 
-
-[related]
-  includeNewer = false
-  threshold = 80
-  toLower = false
-  

@@ -1,12 +1,15 @@
 
-{{ $related := .Site.RegularPages.Related . | first 5 }}
-{{ with $related }}
-<div class="related_post_section">
-    <h2 class = "related_post_title">See Also</h2>
-    <ul class = "related_post">
+{{- if .Param "related" | default true }}
+ {{ $related := .Site.RegularPages.RelatedIndices . | first 5 }}  
+  {{ with $related }}
+  <div class="content clearfix">
+    <br />
+    <h4>Related Posts</h4>
+    <ul>
         {{ range . }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> — <small>{{ .PublishDate.Format "January 2, 2006" }}</small></li>
         {{ end }}
     </ul>
-</div>
+  </div>
+ {{ end }}
 {{ end }}
