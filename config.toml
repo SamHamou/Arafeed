@@ -1,5 +1,7 @@
 # Site settings
 baseurl = "/"
+languageCode = "ar-SA"
+DefaultContentLanguage = "ar"
 title = "تحميل"
 themesDir = "themes"
 theme = "Feed"
