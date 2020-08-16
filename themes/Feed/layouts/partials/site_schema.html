@@ -10,10 +10,9 @@
     "license": "{{ .Site.Params.Copyright }}"
 }
 </script>
-{{ else if .IsPage -}}
-{{- $author := index .Site.Data.authors ( .Params.author | default .Site.Author.code ) -}}
-{{- $accountablePerson := .Site.Author.name -}}
-{{- $org_name :=  .Site.Title -}}
+{{ else if .IsPage }}
+{{ $author :=  or (.Params.author) (.Site.Author.name) }}
+{{ $org_name :=  .Site.Title }}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -23,22 +22,23 @@
     "headline": "{{ .Title | safeJS }}",
     "alternativeHeadline": "{{ .Params.lead }}",
     "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-	"isFamilyFriendly": "true",
+    "inLanguage": "{{ .Site.LanguageCode | default "ar-SA" }}",
+    "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ .Permalink }}"
     },
     "author" : {
         "@type": "Person",
-        "name": "{{ $author.name }}"
+        "name": "{{ $author }}"
     },
     "creator" : {
         "@type": "Person",
-        "name": "{{ $author.name }}"
+        "name": "{{ $author }}"
     },
     "accountablePerson" : {
         "@type": "Person",
-        "name": "{{ $accountablePerson }}"
+        "name": "{{ $author }}"
     },
     "copyrightHolder" : "{{ $org_name }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
@@ -59,8 +59,8 @@
     "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "genre" : {{ .Params.tags }},
-    "keywords" : {{ .Params.keywords }}
+    "genre" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
+    "keywords" : [ {{ range $index, $keyword := .Params.keywords }}{{ if $index }}, {{ end }}"{{ $keyword }}" {{ end }}]
 }
 </script>
-{{ end -}}
+{{ end }}
