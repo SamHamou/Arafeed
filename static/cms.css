@@ -1,2 +1,2 @@
-.css-1f7nhiq-CollectionMain {
-    padding-right: 280px;
+const CollectionMain = styled.main`
+  padding-right: 280px;
