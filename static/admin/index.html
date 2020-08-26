@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar-SA">
+<html dir="rtl" lang="ar-SA">
 <head>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -11,6 +11,8 @@
    <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@2.10.55/dist/netlify-cms.js"></script>
     <script>
+	  CMS.registerPreviewStyle("/cms.css");
+</script>
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
