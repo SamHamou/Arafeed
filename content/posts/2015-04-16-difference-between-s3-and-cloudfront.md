@@ -1,6 +1,4 @@
 ---
-slug: blog/difference-between-s3-and-cloudfront
-thumbnail: /images/image.png
 title: تحميل برنامج انترنت داونلود مانجر كامل مجانا
 date: 2015-04-16
 description: "تحميل برنامج انترنت داونلود مانجر Internet Download Manager برنامج
@@ -11,7 +9,6 @@ tags:
   - داونلود مانجر مدى الحياة
   - internet download manager free download full version تحميل
 template: post
-image: /images/Rocket.webp
 categories:
   - windows
 ---
