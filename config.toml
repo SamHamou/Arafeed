@@ -109,7 +109,7 @@ hasCJKLanguage = true
    category = "categories" 
    
 [permalinks]
-  post  = "/:slug/"
+  posts  = "/:slug/"
   pages = "/:filename/"
   categories = "/:title/"   
 

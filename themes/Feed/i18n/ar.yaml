@@ -59,7 +59,7 @@
 
 # Tags List widget
 - id: tags_title
-  translation: "تصنيفات"
+  translation: "كلمات مفتاحية"
 
 # Footer
 - id: footer_credits
