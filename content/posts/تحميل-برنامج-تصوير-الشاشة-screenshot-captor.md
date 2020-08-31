@@ -18,8 +18,6 @@ categories:
 
 ![برنامج Screenshot Captor](https://1.bp.blogspot.com/-K9t_OC916Ow/XHqQOsbD7DI/AAAAAAAABVo/Qh6EP2pkHUIINhBYaI_VxDVtHPQFDvIVwCLcBGAs/s1600/Screenshot-Captor.png "Screenshot Captor")
 
-
-
 ## مميزات وخصائص برنامج Screenshot Captor
 
 * برنامج مجاني وسهل في التعامل.
@@ -33,8 +31,6 @@ categories:
 * إمكانية التقاط صورة من كاميرا الويب Webcams عن طريق إضافة ESR.
 * خاصية تصوير الشاشة مع التمرير Scrolling Capture حتى تتمكن من تصوير كامل الشاشة وهي خاصية مفيدة لمن يريد تصوير صفحة طويلة على الإنترنت.
 * يدعم برنامج تصوير الشاشة Screenshot Captor العديد من امتدادات الملفات مثل jpg، png، gif، tiff وغيرها من الامتدادات الشائعة.
-
-
 
 ### معلومات برنامج Screenshot Captor
 
