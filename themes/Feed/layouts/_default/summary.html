@@ -20,7 +20,7 @@
 		{{- end }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		{{ .Summary }}
+		{{ .Summary | safeHTML | truncate 120 }}
 		{{ .Content | safeHTML | truncate 120 }}
 	</div>
 	{{- if .Site.Params.readmore }}
