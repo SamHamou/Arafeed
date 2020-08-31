@@ -21,6 +21,7 @@
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		{{ .Summary }}
+		{{ .Content | safeHTML | truncate 120 }}
 	</div>
 	{{- if .Site.Params.readmore }}
 	{{- if .Truncated }}
