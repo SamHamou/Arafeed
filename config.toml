@@ -8,7 +8,7 @@ theme = "Feed"
 paginate = 6
 assetDir = "static"
 
-summarylength = 10
+summarylength = 20
 hasCJKLanguage = true 
 
 
