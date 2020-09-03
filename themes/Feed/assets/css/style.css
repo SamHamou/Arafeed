@@ -131,6 +131,7 @@ textarea {
 	white-space: pre-line;
 	background: #34548d;
     margin-top: -5%;
+	font-size: smaller;
 }
 
 .btn:hover {
@@ -209,7 +210,6 @@ hr {
 p {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
-    text-align: center;
 }
 
 b,
@@ -683,6 +683,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a {
 	font-weight: 700;
 	color: #3abd69;
+
 }
 
 .content a:hover,
@@ -983,6 +984,9 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: bottom;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 iframe,
