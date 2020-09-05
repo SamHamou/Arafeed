@@ -1,6 +1,6 @@
 <!-- Widget Random -->
 {{ $filteredPosts := where .Site.RegularPages "Type" "in" site.Params.mainSections }}          
-{{ $relatedPosts := shuffle $filteredPosts | first 3 }}  
+{{ $relatedPosts := shuffle $filteredPosts | first 6 }}  
           
 
 {{- if $relatedPosts }}
