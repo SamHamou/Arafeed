@@ -160,7 +160,7 @@ h6 {
 }
 
 h1 {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	margin: 50px 0 20px 0;
 	margin: 3.125rem 0 1.25rem 0;
 }
@@ -193,7 +193,7 @@ h6 {
 }
 
 a {
-	color: #000;
+	color: #373d5b;
 	text-decoration: none;
 }
 
@@ -984,6 +984,9 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: bottom;
+	text-align: center;
+    display: block;
+    margin: 0 auto;
 
 }
 
@@ -1434,6 +1437,8 @@ background-color: #FF6600
         height: 24px;
         width: 1.5rem;
         height: 1.5rem;
+		float: right;
+        margin-left: 10px;
     }
 
 	.sidebar {
