@@ -1,4 +1,4 @@
-{{- range first 3 (shuffle (where .Site.RegularPages "Section" "blog"  .Site.Params.mainSections }}
+{{- $recent := range first 3 (shuffle (where (where .Site.RegularPages "Section" "blog")  .Site.Params.mainSections }}
 {{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
 
 {{- if $recent }}
