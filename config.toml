@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://tahmil.netlify.app/"
+baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
