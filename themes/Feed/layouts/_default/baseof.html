@@ -45,6 +45,9 @@
 		{{ partial "footer" . }}
 	</div>
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101278631);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101278631ns.gif" /></p></noscript>
 {{ range .Site.Params.customJS -}}
 <script src="{{ . | relURL }}"></script>
 {{- end }}
