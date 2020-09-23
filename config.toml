@@ -124,3 +124,7 @@ hasCJKLanguage = true
     style = "monokai"
     tabWidth = 4
 
+[sitemap]
+  changefreq = "always"
+  filename = "sitemap.xml"
+  priority = 1.0
