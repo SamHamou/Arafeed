@@ -10,7 +10,8 @@ assetDir = "static"
 
 summarylength = 20
 hasCJKLanguage = true 
-
+enableRobotsTXT = "true"
+canonifyURLs = true
 
 [Author] # Default Author
   code = "SamHamou"
