@@ -22,7 +22,7 @@ categories:
 
 > اجهزة الموبايل اندرويد والايفون والكمبيوتر واجهزة الكمبيوتر و الرسيفر واجهزة الاستقبال دي في بي DVB.
 >
-> [](https://www.facebook.com/sharer/sharer.php?v=4&u=https://t4powertech.blogspot.com/2019/12/xtream-code-iptv-2020112.html&quote=%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A8%D8%A7%D9%8A%D9%84%20%D8%A7%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF%20%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D9%81%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1%20%D9%88%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%B1%D8%B3%D9%8A%D9%81%D8%B1%20%D9%88%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%A8%D8%A7%D9%84%20%D8%AF%D9%8A%20%D9%81%D9%8A%20%D8%A8%D9%8A%20DVB.)[](https://twitter.com/intent/tweet?url=https://t4powertech.blogspot.com/2019/12/xtream-code-iptv-2020112.html&text=%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A8%D8%A7%D9%8A%D9%84%20%D8%A7%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF%20%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D9%81%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1%20%D9%88%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%B1%D8%B3%D9%8A%D9%81%D8%B1%20%D9%88%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%A8%D8%A7%D9%84%20%D8%AF%D9%8A%20%D9%81%D9%8A%20%D8%A8%D9%8A%20DVB.%20:)
+>)
 
 xtream iptv codes,xtream iptv,xtream codes iptv,xtream codes,code xtream iptv 2019,xtream code iptv,xtream code,iptv,xtream codes iptv pc,xtream codes iptv free,iptv 2019,xtream iptv code,iptv shutdown 2019,xtream codes iptv شرح,xtream iptv free,xtream iptv player,xtream iptv كود,xtream codes down,code xtream iptv,xtream iptv سيرفر,xtream iptv مجاني
 
@@ -32,7 +32,7 @@ xtream iptv codes,xtream iptv,xtream codes iptv,xtream codes,code xtream iptv 20
 
 > **[رابط تحميل اكواد Xtream Code Iptv](https://mega4up.com/mc8jliw23t20)**
 >
-> [](https://mega4up.com/mc8jliw23t20)[](https://www.facebook.com/sharer/sharer.php?v=4&u=https://t4powertech.blogspot.com/2019/12/xtream-code-iptv-2020112.html&quote=%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%AD%D9%85%D9%8A%D9%84%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%AF%20Xtream%20Code%20IptV%20%D9%84%D9%85%D8%AF%D8%A9%202022/11/2)[](https://twitter.com/intent/tweet?url=https://t4powertech.blogspot.com/2019/12/xtream-code-iptv-2020112.html&text=%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%AD%D9%85%D9%8A%D9%84%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%AF%20Xtream%20Code%20IptV%20%D9%84%D9%85%D8%AF%D8%A9%202022/11/2%20:)
+> 
 >
 > [](https://mega4up.com/mc8jliw23t20)
 
