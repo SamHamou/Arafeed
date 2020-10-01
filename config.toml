@@ -3,22 +3,24 @@ baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-themesDir = "themes"
 theme = "Tahmil"
 paginate = 6
-assetDir = "static"
-
-summarylength = 20
 hasCJKLanguage = true 
 enableRobotsTXT = "true"
 canonifyURLs = true
 
-[Author] # Default Author
-  code = "SamHamou"
+[taxonomies]
+   tag = "tags"
+   category = "categories" 
+   
+[permalinks]
+  posts  = "/:slug/"
+  pages = "/:filename/"
+  categories = "/:title/"   
+
+
+[Author]
   name = "Sam Hamou"
-  
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
 
 [menu]
   [[menu.main]]
@@ -72,22 +74,17 @@ canonifyURLs = true
     weight = 4
 
 [Params]
-  subtitle = "موسوعة البرامج المجانية" # Subtitle of your site. Used in site header
   description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
-  logo = "/img/logo.png"
-  copyright = "/" # Footer copyright holder, otherwise will use site title
-  opengraph = true # Enable OpenGraph if true
-  twitter_cards = true # Enable Twitter Cards if true
+  opengraph = true
+  twitter_cards = true
   readmore = false # Show "Read more" button in list if true
-  authorbox = false # Show authorbox at bottom of pages if true
-  toc = true # Enable Table of Contents
-  post_navigation = true # Show post navigation at bottom of pages if true
-  post_meta = ["author", "categories"] # Order of post meta information
-  mainSections = ["posts", "anothersection"] # Specify section pages to show on home page and the "Recent articles" widget
-  dateformat = "January 02, 2006" # Change the format of dates
-  highlightColor = "#e22d30" # Override highlight color
-  # customCSS = ["css/custom.css"] # Include custom CSS files
-  # customJS = ["js/custom.js"] # Include custom JS files
+  authorbox = false
+  pager = true
+  post_meta = ["categories"] # Order of post meta information
+  mainSections = ["posts", "anothersection"]
+
+[Params.logo]
+  subtitle = "موسوعة البرامج المجانية" # Logo subtitle
   
 
 [Params.sidebar]
@@ -101,26 +98,3 @@ canonifyURLs = true
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
-
-[taxonomies]
-   tag = "tags"
-   category = "categories" 
-   
-[permalinks]
-  posts  = "/:slug/"
-  pages = "/:filename/"
-  categories = "/:title/"   
-
-[markup]
-  [markup.goldmark.renderer]
-    unsafe= true
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "monokai"
-    tabWidth = 4
