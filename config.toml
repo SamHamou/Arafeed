@@ -10,6 +10,7 @@ canonifyURLs = true
 [sitemap]
     changefreq = "weekly"
     priority = 0.5
+	filename = "map.xml"
 	
 [taxonomies]
    category = "categories"
