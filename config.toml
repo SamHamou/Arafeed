@@ -7,7 +7,6 @@ theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
-disableKinds = ["sitemap"]
 
 [taxonomies]
    tag = "tags"
