@@ -7,15 +7,19 @@ theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
-
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
+	
 [taxonomies]
-   tag = "tags"
-   category = "categories" 
+   tag = "Tag"
+   category = "Category" 
    
 [permalinks]
   posts  = "/:slug/"
   pages = "/:filename/"
-  categories = "/:title/"   
+  category = "/:title/"
+  tag = "/:title/"   
 
 
 [Author]
