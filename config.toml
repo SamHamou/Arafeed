@@ -12,8 +12,8 @@ canonifyURLs = true
     priority = 0.5
 	
 [taxonomies]
-   tag = "Tag"
-   category = "Category" 
+   tag = "tag"
+   category = "category" 
    
 [permalinks]
   posts  = "/:slug/"
