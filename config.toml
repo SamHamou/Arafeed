@@ -9,7 +9,7 @@ canonifyURLs = true
 
 [sitemap]
     changefreq = "weekly"
-    priority = 0.5
+    priority = 0.9
 	filename = "map.xml"
 	
 [taxonomies]
@@ -19,8 +19,7 @@ canonifyURLs = true
 [permalinks]
   posts  = "/:slug/"
   pages = "/:filename/"
-  categories = "/:title/"
-  tags = "/:title/"   
+  categories = "/:title/" 
 
 
 [Author]
