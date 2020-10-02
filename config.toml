@@ -5,9 +5,9 @@ DefaultContentLanguage = "ar"
 title = "تحميل"
 theme = "Tahmil"
 paginate = 6
-hasCJKLanguage = true 
-enableRobotsTXT = "true"
 canonifyURLs = true
+
+disableKinds = ["sitemap"]
 
 [taxonomies]
    tag = "tags"

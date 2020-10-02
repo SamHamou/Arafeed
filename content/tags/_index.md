@@ -1,4 +1,0 @@
-[cascade]
-sitemap:
-  changefreq: monthly
-  priority: 0.5
