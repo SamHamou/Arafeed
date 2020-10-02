@@ -12,14 +12,14 @@ canonifyURLs = true
     priority = 0.5
 	
 [taxonomies]
-   tag = "tag"
-   category = "category" 
+   category = "categories"
+   tag = "tags"
    
 [permalinks]
   posts  = "/:slug/"
   pages = "/:filename/"
-  category = "/:title/"
-  tag = "/:title/"   
+  categories = "/:title/"
+  tags = "/:title/"   
 
 
 [Author]
