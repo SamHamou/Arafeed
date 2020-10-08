@@ -1,5 +1,5 @@
 ---
-title: "Adobe After Effects 2020 Crack v17.1.1.37 "
+title: Adobe After Effects 2020 Crack v17.1.1.37 تحميل مجاني
 date: 2020-10-08T11:14:02.996Z
 description: "**Adobe After Effects Crack** 2020 يجعل المشهد أكبر. أنشئ عناوين
   أفلام سينمائية ومقدمات وانتقالات. قم بإزالة كائن من مقطع. أشعل النار أو اجعلها
