@@ -85,9 +85,6 @@ canonifyURLs = true
   pager = true
   post_meta = ["categories"] # Order of post meta information
   mainSections = ["posts", "anothersection"]
-
-[Params.logo]
-  subtitle = "موسوعة البرامج المجانية" # Logo subtitle
   
 
 [Params.sidebar]
