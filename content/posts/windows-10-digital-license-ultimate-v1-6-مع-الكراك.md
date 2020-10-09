@@ -7,8 +7,8 @@ description: "**Windows 10 Digital License Ultimate Crack** هو أفضل برن
 thumbnail: /images/windows.webp
 tags:
   - تنزيل مجاني من
-  - "* نظام التشغيل Windows 10 Cloud N"
-  - "## Windows 10 Digital License Ultimate v1.6 تنزيل النسخة الكاملة"
+  - نظام التشغيل Windows 10 Cloud N
+  - Windows 10 Digital License Ultimate v1.6 تنزيل النسخة الكاملة
 categories:
   - Windows
 ---
