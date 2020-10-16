@@ -9,8 +9,7 @@
 			{{ with partial "post_meta.html" . -}}
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
-		</header>
-		
+		</header>	
 		<div class="content post__content clearfix">
 			{{ .Content }}
 			{{- partial "socialshare.html" . -}}
@@ -22,5 +21,4 @@
 		{{- end }}
 	</article>
 </main>
-{{ partial "pager.html" . }}
 {{ end }}

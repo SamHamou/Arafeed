@@ -3,28 +3,51 @@
  command = "hugo --gc --minify"
 
 [context.production.environment]
- HUGO_VERSION = "0.76.3"
- HUGO_ENV = "production"
- HUGO_ENABLEGITINFO = "true"
+HUGO_VERSION = "0.74.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
- command = "hugo --gc --minify --enableGitInfo"
+command = "hugo --gc --minify --enableGitInfo"
 
 [context.split1.environment]
- HUGO_VERSION = "0.76.3"
- HUGO_ENV = "production"
+HUGO_VERSION = "0.74.3"
+HUGO_ENV = "production"
 
 [context.deploy-preview]
- command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
- HUGO_VERSION = "0.76.3"
+HUGO_VERSION = "0.74.3"
 
 [context.branch-deploy]
- command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
- HUGO_VERSION = "0.76.3"
+HUGO_VERSION = "0.74.3"
 
 [context.next.environment]
- HUGO_ENABLEGITINFO = "true"
+HUGO_ENABLEGITINFO = "true"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+
+	[plugins.inputs]
+	debug = true
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+
+	baseUrl = "https://www.tahmil.me"
+	sitemapPath = "/map.xml"
+	providers = [
+		"google",
+		"bing",
+		"yandex"
+	]
+
