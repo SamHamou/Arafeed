@@ -10,7 +10,7 @@ meta_image = "/images/whoami/avatar.jpg"
 authorImage = "/images/whoami/avatar.jpg"
 author = "victor"
 
-themeOptions = ["dark"]
+themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
