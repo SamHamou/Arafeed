@@ -38,3 +38,4 @@ enableGitInfo = false # When true, the modified date will appear on a summary an
 [taxonomies]
   category = "categories"
   tag = "tags"
+  series = "series"
