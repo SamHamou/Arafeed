@@ -3,7 +3,7 @@ baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-theme = "Zoo"
+theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
