@@ -1,13 +1,6 @@
-[en]
-  title = "gictor.ir"
-  languageName = "English"
+[ar]
+  title = "تحميل"
+  languageName = "Arabic"
   weight = 1
-  languagedir = "ltr"
-  navbardir = "ltr"
-
-[fa]
-  title = "gictor.ir"
-  languageName = "Farsi"
-  weight = 2
   languagedir = "rtl"
-  navbardir = "ltr"
+  navbardir = "rtl"
