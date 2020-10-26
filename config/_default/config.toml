@@ -1,10 +1,10 @@
-baseURL = "http://gictor.ir" # The URL of your site.
-title = "gictor.ir" # Title of your site
+baseURL = "https://www.tahmil.me/" # The URL of your site.
+title = "تحميل" # Title of your site
 theme = "Zoo" # Name of Zzo theme folder in `themes/`.
 
-defaultContentLanguage = "fa" # Default language to use (if you setup multilingual)
+defaultContentLanguage = "ar" # Default language to use (if you setup multilingual)
 defaultContentLanguageInSubdir = false # baseURL/en/, baseURL/kr/ ...
-hasCJKLanguage = false # Set `true` for Chinese/Japanese/Korean languages.
+hasCJKLanguage = true # Set `true` for Chinese/Japanese/Korean languages.
 
 summaryLength = 70 # The length of a post description on a list page.
 buildFuture = true # if true, we can use future date for talks page
