@@ -1,0 +1,44 @@
+[writtenBy]
+other = "Écrit par"
+
+[publishdate]
+other = "Publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Date.Month) }} {{ .Date.Year }}"
+
+[services]
+other = "Services"
+
+[cloudNativeApplications]
+other = "Applications Cloud Natives"
+
+[embeddedSoftwares]
+other = "Logiciels Embarqués & IoT"
+
+[criticalSoftwares]
+other = "Logiciels Critiques"
+
+[theCompany]
+other = "L'Entreprise"
+
+[ourVision]
+other = "Notre Vision"
+
+[contact]
+other = "Contact"
+
+[jobs]
+other = "Emplois"
+
+[blog]
+other = "Blog"
+
+[contactUs]
+other = "Contactez nous"
+
+[readMore]
+other = "Lire la suite"
+
+[LegalInfo]
+other = "Mentions Légales"
+
+[allRightsReserved]
+other = "Sogilis - Tous Droits Réservés - 2020"

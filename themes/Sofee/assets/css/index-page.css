@@ -1,0 +1,82 @@
+main {
+  padding-top: 12em;
+}
+
+/* The grid element on the index page */
+/* ========================================================================== */
+
+#blogindex {
+  display: grid;
+  grid-gap: 2em;
+  grid-auto-rows: 22em;
+  padding-bottom: 6em;
+}
+
+@media (min-width: 768px) {
+  #blogindex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #blogindex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Each cell of the grid */
+/* ========================================================================== */
+
+.blogindex-article {
+  display: grid;
+  grid-template-rows: 11.7em 6.3em 2em;
+  grid-gap: 0.5em;
+  box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.blogindex-article:hover {
+  text-decoration: none;
+}
+
+/* Image */
+/* ========================================================================== */
+
+.blogindex-article-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.8s;
+}
+
+.blogindex-article:hover .blogindex-article-img {
+  filter: grayscale(100%);
+}
+
+/* The title and 'Lire la suite */
+/* ========================================================================== */
+
+.blogindex-article-text {
+  margin: 0 1.6em;
+  transition: color 0.5s;
+}
+
+/* The title */
+/* ========================================================================== */
+
+.blogindex-article-title {
+  color: var(--dark-grey);
+}
+
+/* p is "Lire la suite" in French */
+/* ========================================================================== */
+
+.blogindex-article-readmore {
+  font-weight: 500;
+  color: var(--wolf-blue);
+  text-align: right;
+}
+
+.blogindex-article:hover > .blogindex-article-readmore {
+  color: var(--light-electric-blue);
+  text-decoration: underline;
+}

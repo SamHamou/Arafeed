@@ -1,0 +1,205 @@
+/* NOTE: INTO HUGO, THE FOLLOWING CSS DEFINITION CORRESPOND TO THE FILE SINGLE.HTML */
+/* =========================================================================== */
+/* TODO remove preceding comment when we will migrate to another tool */
+
+#articlepage {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: inherit;
+  color: var(--medium-grey);
+}
+
+/* Folliwng copied from Bootstrap 4.4.1 */
+/* following is not into reboot.css */
+/* ========================================================================== */
+
+code {
+  /* Line 503 into bootstrap.css 4.4.1 */
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-wrap: break-word;
+}
+
+a > code {
+  color: inherit;
+}
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: 700;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  /* Redefined by use bellow */
+  /* color: #212529; */
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+/* Definitions for elements in the page article */
+/* ========================================================================== */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-serif);
+  /*
+   * As "EB Garamond" is a small font, if we want the same height as a classic
+   * font we should set 1.2 rem. As it its hight of an lowercase letter is 8px.
+   * Compared with font "Segeo UI" used into Bootstrap website.
+   */
+  font-size: 1.2em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+}
+
+blockquote,
+pre,
+.articlepage-img {
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+blockquote,
+pre {
+  width: 70%;
+  margin: 1.9rem 0 1.9rem 3.75rem;
+  padding: 1.9rem 1.25rem 1.9rem 1.25rem;
+  border: solid 5px transparent;
+}
+
+blockquote {
+  font-style: italic;
+  border-left-color: var(--dark-blue);
+  background-color: white;
+}
+
+pre {
+  border-left-color: var(--medium-blue);
+}
+
+#articlepage a {
+  color: var(--wolf-blue);
+  transition: color 0.3s;
+}
+
+#articlepage a:hover {
+  color: var(--dark-grey);
+}
+
+#articlepage p {
+  hyphens: auto;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #articlepage p {
+    margin-left: 1.5rem;
+  }
+}
+
+/* Reduce caption margin in a <figure> (instead of default h4 margin) */
+/* Generated with {{< figure …>}} in .md files */
+figcaption h4 {
+  margin-top: 0.5rem;
+}
+
+/* Section header */
+/* ========================================================================== */
+
+#articlepage-header {
+  display: flex;
+  max-width: inherit;
+  margin-bottom: 3rem;
+  word-wrap: break-word;
+}
+
+#articlepage-header-title {
+  margin-left: 1.9rem;
+}
+
+#articlepage-header-title-h1 {
+  font-size: 2rem;
+  color: var(--wolf-blue);
+  font-weight: 600;
+}
+
+#articlepage-header-title-h1::before {
+  content: '';
+  position: absolute;
+  height: 0.3rem;
+  width: 1.5rem;
+  background-color: var(--light-electric-blue);
+  margin-top: 1.25rem;
+  margin-left: -2.25rem;
+}
+
+#articlepage-header-img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  /* On the left */
+  #articlepage-header-img-container {
+    max-width: 60%;
+  }
+  /* On the right */
+  #articlepage-header-title {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  #articlepage-header {
+    flex-direction: column;
+  }
+  #articlepage-header-title-h1 {
+    margin-top: 3rem;
+  }
+  #articlepage-header-img-container {
+    max-width: 100%;
+  }
+}
+
+/* Section content */
+/* ========================================================================== */
+/* Waring: Some pictures could be to small in some screens */
+/* Like into http://blog.sogilis.fr/posts/2016-09-27-mise-place-livret-accueil/# */
+#articlepage-content img {
+  max-width: 100%;
+}
+
+/* Image on the bottom */
+/* ========================================================================== */
+#articlepage-img-bottom {
+  max-width: 100%;
+}
+
+/* Section comment */
+/* ========================================================================== */
+
+#articlepage-comments {
+  margin-top: 3rem;
+}
