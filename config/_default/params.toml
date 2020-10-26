@@ -43,12 +43,10 @@ searchResultPosition = "side" # side, main
 # sidebar
 enableBio = true # home page sidebar
 enableSidebar = true # Set to false to create the full width of the content.
-enableSidebarTags = true # if you want to use tags.
-enableSidebarSeries = true
+enableSidebarTags = true # if you want to use tags.e
 enableSidebarCategories = true
 enableHomeSidebarTitles = true
 enableListSidebarTitles = true
-enableToc = true # single page table of contents, you can replace this param to toc(toc = true)
 sidebarPosition = "right" # bio, profile component layout position
 hideToc = false # Hide or Show toc
 tocFolding = false
