@@ -22,8 +22,6 @@
       <div class="post-content">
          {{ if $featured_image }}
             {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-               <img class="img-fluid" src="{{ .Site.Params.cloudfront }}images/{{ $featured_image }}" alt="" style="width:100%;">
-            {{ else }}
                <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}" style="width:100%;">
             {{ end }}
          {{ else }}

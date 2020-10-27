@@ -9,9 +9,6 @@
                <a href="{{ .Permalink }}">
                   {{ if $featured_image }}
                   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-                  <img src="{{ .Site.Params.cloudfront }}thumbnail/{{ $featured_image }}" alt="{{ .Title }}"
-                     style="height:100%;width:100%;">
-                  {{ else }}
                   <img src="{{ .Site.BaseURL }}thumbnail/{{ $featured_image }}" alt="{{ .Title }}"
                      style="height:100%;width:100%;">
                   {{ end }}
