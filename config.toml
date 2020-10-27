@@ -1,6 +1,6 @@
 # Site settings
 baseurl = "https://www.tahmil.me/"
-languageCode = "ar-SA"
+languageCode = "ar"
 DefaultContentLanguage = "ar"
 title = "تحميل"
 theme = "Geek"
