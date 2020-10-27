@@ -13,7 +13,7 @@
                      style="height:100%;width:100%;">
                   {{ end }}
 				  {{ else }}
-                  <img src=""{{ if .Params.thumbnail -}}{{ .Params.thumbnail|absURL }}" alt="{{ .Title }}" style="height:100%;width:100%;">
+                  <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" style="height:100%;width:100%;">
                   {{ end }}
                   <div class="preview"><span>Read more</span></div>
                </a>
