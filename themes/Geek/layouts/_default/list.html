@@ -13,7 +13,7 @@
                      style="height:100%;width:100%;">
                   {{ end }}
 				  {{ else }}
-                  <img src="/img/no-photo.jpg" alt="{{ .Title }}" style="height:100%;width:100%;">
+                  <img src="{{ (print "images/" ($.Param "featured_image")) | relURL }}" alt="{{ .Title }}" style="height:100%;width:100%;">
                   {{ end }}
                   <div class="preview"><span>Read more</span></div>
                </a>
