@@ -2,14 +2,22 @@
 <div class="container margin_80_55">
    <div class="row">
       {{ range .Pages }}
-      {{ if .Params.images }}
+{{ $featured_image := .Params.images }}
       <div class="col-xl-4 col-lg-6 col-md-6">
          <article class="blog">
             <figure>
                <a href="{{ .Permalink }}">
-                  <img src="{{ .Params.images | relURL }}" alt="{{ .Title }}"
+                  {{ if $featured_image }}
+                  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+                  <img src="{{ .Site.Params.cloudfront }}images/{{ $featured_image }}" alt="{{ .Title }}"
                      style="height:100%;width:100%;">
-
+                  {{ else }}
+                  <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}"
+                     style="height:100%;width:100%;">
+                  {{ end }}
+                  {{ else }}
+                  <img src="/img/no-photo.jpg" alt="{{ .Title }}" style="height:100%;width:100%;">
+                  {{ end }}
                   <div class="preview"><span>Read more</span></div>
                </a>
             </figure>
