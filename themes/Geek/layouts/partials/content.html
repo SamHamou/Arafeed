@@ -25,7 +25,7 @@
             <img src="{{ .Site.BaseURL }}/{{ $featured_image }}" alt="{{ .Title }}" style="width:100%;">
             {{ end }}
          {{ else }}
-            <img class="img-fluid" src="{{ . }}" alt="{{ .Title }}" style="width:100%;">
+            <img class="img-fluid" src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" style="width:100%;">
          {{ end }}
          <p></p>
          {{ .Content }}
