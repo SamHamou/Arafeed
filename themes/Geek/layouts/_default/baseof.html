@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+   <head>
+      {{ partial "head-meta.html" . }}
+      <title>{{ .Title | default .Site.Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
+      {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      <link href="{{ .Site.Params.cloudfront }}css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ .Site.Params.cloudfront }}css/style.css" rel="stylesheet">
+      <link href="{{ .Site.Params.cloudfront }}css/prism.css" rel="stylesheet">
+      <!-- YOUR CUSTOM CSS -->
+      <link href="{{ .Site.Params.cloudfront }}css/blog.css" rel="stylesheet">
+      <link href="{{ .Site.Params.cloudfront }}css/custom.css" rel="stylesheet">
+      {{ else }}
+      <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+      <link href="{{ .Site.BaseURL }}css/prism.css" rel="stylesheet">
+      <!-- YOUR CUSTOM CSS -->
+      <link href="{{ .Site.BaseURL }}css/blog.css" rel="stylesheet">
+      <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
+      {{ end }}
+      <link type="textcss" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      {{ partial "google-tags.html" . }}
+      {{ partial "google-adsense.html" . }}
+   </head>
+   <body>
+      <div id="page">
+         <header class="header_in is_sticky menu_fixed justify-content-between">
+            {{ partial "header.html" . }}
+         </header>
+         <main>
+            {{ block "main" . }}{{ end }}
+            {{ partial "google-adsense-bottom.html" .}}
+         </main>
+         <footer>
+            {{ partial "footer.html" . }}
+         </footer>
+      </div>
+   </body>
+   <div id="toTop"></div><!-- Back to top button -->
+   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+   <script src="{{ .Site.Params.cloudfront }}js/common_scripts.js"></script>
+   <script src="{{ .Site.Params.cloudfront }}js/validate.js"></script>
+   <script src="{{ .Site.Params.cloudfront }}js/prism.js"></script>
+   {{ else }}
+   <script src="{{ .Site.BaseURL }}js/common_scripts.js"></script>
+   <script src="{{ .Site.BaseURL }}js/validate.js"></script>
+   <script src="{{ .Site.BaseURL }}js/prism.js"></script>
+   {{ end }}
+</html>

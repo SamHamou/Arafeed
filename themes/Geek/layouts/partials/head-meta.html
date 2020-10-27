@@ -1,0 +1,30 @@
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#2980b9" />
+      <meta name="author" content="santekno.com">
+      <meta name="title" content="{{ .Title | default .Site.Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}" />
+      <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+      {{ if isset .Params "keywords" }}
+      <meta name="keywords" content="{{ delimit .Keywords ", " }}, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      {{ else }}
+      {{ if isset .Params "tags" }}
+      <meta name="keywords" content="{{ delimit .Params.Tags ", " }}, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      {{ else }}
+      <meta name="keywords" content="Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      {{ end }}
+      {{ end }}
+
+      <meta name="robots" content="index, follow"/>
+
+      {{ if or (eq .Kind "home") (eq .Kind "page") }}
+      {{ if isset .Params "canonical" }}
+      <link rel="canonical" href="{{ .Params.Canonical}}" />
+      {{ else }}
+      <link rel="canonical" href="{{ .Permalink}}" />
+      {{ end }}
+      {{ end }}
+
+      {{ if .Site.Params.favicon }}
+      <link rel="icon" type="image/png" href="/images/{{ .Site.Params.favicon }}" />
+      {{ end }}

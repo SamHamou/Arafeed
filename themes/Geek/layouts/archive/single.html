@@ -1,0 +1,33 @@
+{{ define "title" }}{{ .Title | markdownify }} - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container margin_80_55">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="singlepost">
+                {{ .Content }}
+                <div class="post-content">
+                    {{ $prev := 3000}}
+                    {{range .Site.RegularPages}}
+                    {{if .Date}}
+                    {{if gt $prev (.Date.Format "2006")}}
+                    {{ if ne $prev 3000}}
+                    </table>
+                    {{ end }}
+                    <h2>{{ .Date.Format "2006" }}</h2>
+                    <table class="all-posts">
+                        {{end}}
+                        <tr>
+                            <td>{{.Date.Format "02 Jan"}}</td>
+                            <td><a class="no-underline" href="{{.Permalink}}">{{.Title}}</a></td>
+                        </tr>
+                        {{ $prev = .Date.Format "2006"}}
+                        {{end}}
+                        {{end}}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
