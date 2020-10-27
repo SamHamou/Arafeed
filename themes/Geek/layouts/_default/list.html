@@ -6,11 +6,7 @@
       <div class="col-xl-4 col-lg-6 col-md-6">
          <article class="blog">
             <figure>
-               <a href="{{ .Permalink }}">
-                  <img src="{{ with .Params.thumbnail }}{{ . }}{{ end }}" />
-
-                  
- 
+                  <img src="{{ with .Params.thumbnail }}{{ . }}{{ end }}" />                 
                   {{ end }}
                   <div class="preview"><span>Read more</span></div>
                </a>
