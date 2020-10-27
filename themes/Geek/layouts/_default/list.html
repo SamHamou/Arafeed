@@ -9,10 +9,7 @@
                <a href="{{ .Permalink }}">
                   <img src="{{ . }}" alt="{{ .Title }}"
                      style="height:100%;width:100%;">
-                  {{ else }}
-                  <img src="{{ .Site.BaseURL }}" alt="{{ .Title }}"
-                     style="height:100%;width:100%;">
-                  {{ end }}
+                  
                   {{ else }}
                   <img src="/img/no-photo.jpg" alt="{{ .Title }}" style="height:100%;width:100%;">
                   {{ end }}
