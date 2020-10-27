@@ -2,14 +2,12 @@
 <div class="container margin_80_55">
    <div class="row">
       {{ range .Pages }}
-{{ $featured_image := .Params.thumbnail }}
+{{  with .Params.thumbnail }}
       <div class="col-xl-4 col-lg-6 col-md-6">
          <article class="blog">
             <figure>
                <a href="{{ .Permalink }}">
-                  {{ if $featured_image }}
-                  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-                  <img src="{{ .Site.Params.cloudfront }}images/{{ $featured_image }}" alt="{{ .Title }}"
+                  <img src="{{ . }}" alt="{{ .Title }}"
                      style="height:100%;width:100%;">
                   {{ else }}
                   <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}"
