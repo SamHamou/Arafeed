@@ -7,11 +7,10 @@
          <article class="blog">
             <figure>
                <a href="{{ .Permalink }}">
-                  <img src="{{ . }}" alt="{{ .Title }}"
-                     style="height:100%;width:100%;">
+                  <img src="{{ with .Params.thumbnail }}{{ . }}{{ end }}" />
+
                   
-                  {{ else }}
-                  <img src="/img/no-photo.jpg" alt="{{ .Title }}" style="height:100%;width:100%;">
+ 
                   {{ end }}
                   <div class="preview"><span>Read more</span></div>
                </a>
