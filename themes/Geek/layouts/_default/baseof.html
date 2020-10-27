@@ -4,13 +4,6 @@
       {{ partial "head-meta.html" . }}
       <title>{{ .Title | default .Site.Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
       {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      <link href="{{ css/bootstrap.min.css | absURL}}" rel="stylesheet">
-      <link href="{{ css/style.css | absURL}}" rel="stylesheet">
-      <link href="{{ css/prism.css | absURL}}" rel="stylesheet">
-      <!-- YOUR CUSTOM CSS -->
-      <link href="{{ css/blog.css | absURL}}" rel="stylesheet">
-      <link href="{{ css/custom.css | absURL}}" rel="stylesheet">
-      {{ else }}
       <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
       <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
       <link href="{{ .Site.BaseURL }}css/prism.css" rel="stylesheet">
