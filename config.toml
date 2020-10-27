@@ -1,9 +1,9 @@
 # Site settings
 baseurl = "https://www.tahmil.me/"
-languageCode = "ar"
+languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-theme = "Geek"
+theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
