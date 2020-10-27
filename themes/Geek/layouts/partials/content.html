@@ -22,8 +22,11 @@
       <div class="post-content">
          {{ if $featured_image }}
             {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-             <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}" style="width:100%;">
+            <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}" style="width:100%;">
             {{ end }}
+         {{ else }}
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="{{ .Title }}" style="width:100%;">
+         {{ end }}
          <p></p>
          {{ .Content }}
       </div>
