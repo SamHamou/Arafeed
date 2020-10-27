@@ -7,7 +7,6 @@
          <article class="blog">
             <figure>
                <a href="{{ .Permalink }}">
-                  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
                   <img src="{{ .Params.images | relURL }}" alt="{{ .Title }}"
                      style="height:100%;width:100%;">
                   {{ end }}
