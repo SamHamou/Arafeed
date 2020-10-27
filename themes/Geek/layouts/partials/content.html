@@ -22,9 +22,8 @@
       <div class="post-content">
          {{ if $featured_image }}
             {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-               <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}"
-                     style="height:100%;width:100%;">
-                  {{ end }}
+             <img src="{{ .Site.BaseURL }}images/{{ $featured_image }}" alt="{{ .Title }}" style="width:100%;">
+            {{ end }}
          <p></p>
          {{ .Content }}
       </div>
