@@ -1,10 +1,9 @@
-#SectionPagesMenu = "main"
 # Site settings
 baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-theme = "Geek"
+theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
@@ -77,3 +76,25 @@ canonifyURLs = true
     parent = "category"
     weight = 4
 
+[Params]
+  description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
+  opengraph = true
+  twitter_cards = true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false
+  pager = false
+  post_meta = ["categories"] # Order of post meta information
+  mainSections = ["posts", "anothersection"]
+  
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  search = "right"
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
