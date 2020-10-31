@@ -1,0 +1,70 @@
+<div class="widget">
+   <div class="list-group">
+      <div class="list-group-item">
+         <h4>مقَالات لا تُفَوَّت </h4>
+ </div>
+      {{ $related := .Site.RegularPages.Related . | first 4 }}
+      {{ with $related }}
+      <ul>
+         {{ range . }}
+            <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action" title="{{ .Title }}">
+            <div class="row">
+               <div class="col-12">
+                  {{ if .Params.image }}
+                  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+                  <img class="rounded float-right mr-3" src="{{ .Params.image | absURL }}"
+                     alt="{{ .Title }}" data-sizes="auto" width="60" height="60" loading="lazy">
+                  {{ else }}
+                  <img class="rounded float-right mr-3" src="{{ .Site.BaseURL }}images/{{ .Params.image }}"
+                     alt="{{ .Title }}" data-sizes="auto" width="60" height="60" loading="lazy">
+                  {{ end }}
+                  {{ else }}
+                  <img class="rounded float-right mr-3" src="/img/blog-single.jpg" alt="{{ .Title }}" width="100%"
+                     data-sizes="auto" width="60" height="60" loading="lazy">
+                  {{ end }}
+                  <h5 class="mb-1">{{ .Title }}</h5>
+                  <small class="text-secondary">{{.Date.Format "2006-01-02"}}</small>
+               </div>
+            </div>
+         </a>
+         {{ end }}
+      </ul>
+	        {{ end }}
+
+</div>
+<div class="widget">
+   <div class="list-group">
+      <div class="list-group-item">
+         <h4>كلمات مفتاحية</h4>
+ </div>
+  {{- $.Scratch.Set "myLimit" 0 }}
+
+{{- $tags := .Site.Taxonomies.tags }}
+
+<div class="widget-taglist widget">
+
+    <div class="widget__content">
+
+    {{- range $name, $taxonomy := $tags }}
+
+        {{- $.Scratch.Set "myLimit" (add ($.Scratch.Get "myLimit") 1) }}
+
+        {{- if le ($.Scratch.Get "myLimit") 25 }}
+
+            {{- with $.Site.GetPage (printf "/tags/%s" $name) }}
+
+            <a class="widget-taglist__link widget__link clouds" href="{{ .RelPermalink }}" title="{{ .Title }}">
+
+                {{- .Title -}}{{- if .Site.Params.widgets.tags_counter }} ({{ $taxonomy.Count }}){{ end -}}
+
+            </a>
+
+            {{- end }}
+
+        {{- end }}
+
+    {{- end }}
+
+    </div>
+
+</div>

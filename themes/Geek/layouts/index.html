@@ -1,0 +1,32 @@
+{{ define "main" }}
+   {{ $truncate := default true .Site.Params.truncate }}
+   {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+   {{ if $truncate }}
+      <div class="container margin_80_55">
+         <div class="row">
+         {{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+         {{ end }}
+         </div>
+         <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">         
+			   {{- if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<div class="pagination">
+	{{- if .Paginator.HasPrev }}
+	<a class="pagination__item pagination__item--prev btn" href="{{ .Paginator.Prev.URL }}">«</a>
+	{{- end }}
+	<span class="pagination__item pagination__item--current">
+		{{- .Paginator.PageNumber }}/{{ .Paginator.TotalPages -}}
+	</span>
+	{{- if .Paginator.HasNext }}
+	<a class="pagination__item pagination__item--next btn" href="{{ .Paginator.Next.URL }}">»</a>
+	{{- end }}
+</div>
+{{- end }}
+            </div>
+         </div>
+      </div>
+   {{ else }}
+      {{ .Render "content" }}
+   {{ end }}
+{{ end }}

@@ -1,0 +1,40 @@
+{{ $featured_image := .Params.images }}
+<div class="col-lg-8">
+   <div class="singlepost">
+    <div class="mb-3">
+         <img src="/img/avatar.webp" class="rounded-circle" width="30" height="30" alt="author" loading="lazy">
+         <a class="align-middle text-dark" href="{{ .Permalink }}" target="_blank" rel="noopener"> {{ .Site.Params.Author }}</a>
+         <small class="align-middle text-muted">       
+         </small>
+		 </div>
+      <h1>{{ .Title | markdownify }}</h1>
+      <div class="postmeta">
+       <ul>
+            <li>
+               {{ range .Params.tags }}
+                  <span class="badge badge-success"> <a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></span>
+               {{ end }}
+            </li>
+         </ul> 
+      </div>
+	        
+      <!-- /post meta -->
+      <div class="post-content">
+         {{ if $featured_image }}
+            {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+            <img src="{{ .Site.BaseURL }}/{{ $featured_image }}" alt="{{ .Title }}" style="height:326;width:100%;">
+            {{ end }}
+         {{ else }}
+            <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="{{ .Title }}" style="height:326;width:100%;">
+         {{ end }}
+         <p></p>
+         {{ .Content }}    
+      </div> 
+      <!-- /post -->
+   </div>
+   
+</div>
+
+<aside class="col-lg-4">
+   {{ template "partials/sidebar.html" . }}
+</aside>
