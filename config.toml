@@ -1,3 +1,4 @@
+#SectionPagesMenu = "main"
 # Site settings
 baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
