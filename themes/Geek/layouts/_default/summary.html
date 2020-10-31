@@ -1,6 +1,6 @@
 
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
-{{ $featured_image := .Params.image }}
+{{ $featured_image := .Params.thumbnail }}
 <div class="col-xl-4 col-lg-6 col-md-6">
    <article class="blog">
       <figure>
@@ -12,7 +12,7 @@
                   <img src="{{ .Site.BaseURL }}{{ $featured_image }}" alt="{{ .Title }}" style="height:185;width:100%;">
                {{ end }}
             {{ else }}
-               <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" style="height:185;width:100%;">
+               <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" style="height:185;width:100%;">
             {{ end }}
             <div class="preview"><span>إقرأ المزيد</span></div>
          </a>
