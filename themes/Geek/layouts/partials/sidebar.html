@@ -10,12 +10,12 @@
             <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action" title="{{ .Title }}">
             <div class="row">
                <div class="col-12">
-                  {{ if .Params.image }}
+                  {{ if .Params.thumbnail }}
                   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-                  <img class="rounded float-right mr-3" src="{{ .Params.image | absURL }}"
+                  <img class="rounded float-right mr-3" src="{{ .Params.thumbnail | absURL }}"
                      alt="{{ .Title }}" data-sizes="auto" width="60" height="60" loading="lazy">
                   {{ else }}
-                  <img class="rounded float-right mr-3" src="{{ .Site.BaseURL }}images/{{ .Params.image }}"
+                  <img class="rounded float-right mr-3" src="{{ .Site.BaseURL }}images/{{ .Params.thumbnail }}"
                      alt="{{ .Title }}" data-sizes="auto" width="60" height="60" loading="lazy">
                   {{ end }}
                   {{ else }}
@@ -49,7 +49,7 @@
 
         {{- $.Scratch.Set "myLimit" (add ($.Scratch.Get "myLimit") 1) }}
 
-        {{- if le ($.Scratch.Get "myLimit") 25 }}
+        {{- if le ($.Scratch.Get "myLimit") 15 }}
 
             {{- with $.Site.GetPage (printf "/tags/%s" $name) }}
 
