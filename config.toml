@@ -47,33 +47,22 @@ canonifyURLs = true
     name = "برامج آيفون"
     url = "/ios"
     weight = 5
-   [[menu.main]]
-    identifier = "category"
-    name = "المزيد"
-    weight = 6
-  [[menu.main]]
-    identifier = "category1"
+  
+  [[menu.footer]]
     name = "عن الموقع"
     url = "/about"
-    parent = "category"
     weight = 1
-  [[menu.main]]
-    identifier = "category2"
+  [[menu.footer]]
     name = "أعلن معنا"
     url = "/ads"
-    parent = "category"
     weight = 2
-  [[menu.main]]
-    identifier = "category3"
+  [[menu.footer]]
     name = "إتصل بنا"
     url = "/contact"
-    parent = "category"
     weight = 3
-   [[menu.main]]
-    identifier = "category4"
+   [[menu.footer]]
     name = "سياسة الخصوصية"
     url = "/privacy"
-    parent = "category"
     weight = 4
 
 [Params]
