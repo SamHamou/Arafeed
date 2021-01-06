@@ -1,6 +1,6 @@
 <!-- Widget Random -->
 {{ $filteredPosts := where .Site.RegularPages "Type" "in" site.Params.mainSections }}          
-{{ $relatedPosts := shuffle $filteredPosts | first 5 }}  
+{{ $relatedPosts := shuffle $filteredPosts | first 10 }}  
           
 
 {{- if $relatedPosts }}
@@ -11,8 +11,7 @@
 			{{ range $relatedPosts }}  
 			<li class="widget__item">
 				<a class="widget__link widget-recent__item" href="{{ .RelPermalink }}">
-				{{- if .Params.thumbnail }}
-					<img class="widget-recent__thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}"/>
+				
 					{{ .Title }}
 				{{- else }}
 					- {{ .Title }}
