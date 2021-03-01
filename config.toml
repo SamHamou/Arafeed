@@ -15,6 +15,7 @@ canonifyURLs = true
 [permalinks]
 posts = "/:slug/"
 pages = "/:slug/"
+categories = "/:title/" 
 
 [params]
 mainSections = [ "posts" ]
@@ -66,12 +67,34 @@ enabled = true
 [params.imageProcessing.content]
 enabled = true
 
+[[menu.main]]
+identifier = "home"
+name = "الرئيسية"
+url = "/"
+weight = -100
+pre = "home"
 
-  [[menu.main]]
-    identifier = "home"
-    name = "الرئيسية"
-    url = "/"
-    weight = 1
+[[menu.main]]
+identifier = "about"
+name = "عن الموقع"
+url = "about"
+weight = -90
+pre = "user"
+
+[[menu.main]]
+identifier = "archives"
+name = "الأرشيف"
+url = "archives"
+weight = -70
+pre = "archives"
+
+[[menu.main]]
+identifier = "search"
+name = "البحث"
+url = "search"
+weight = -60
+pre = "search"
+
   [[menu.main]]
     name = "برامج ويندوز"
     url = "/windows"
@@ -89,22 +112,7 @@ enabled = true
     url = "/ios"
     weight = 5
   
-  [[menu.footer]]
-    name = "عن الموقع"
-    url = "/about"
-    weight = 1
-  [[menu.footer]]
-    name = "أعلن معنا"
-    url = "/ads"
-    weight = 2
-  [[menu.footer]]
-    name = "إتصل بنا"
-    url = "/contact"
-    weight = 3
-   [[menu.footer]]
-    name = "سياسة الخصوصية"
-    url = "/privacy"
-    weight = 4
+
 
 [related]
 includeNewer = true
