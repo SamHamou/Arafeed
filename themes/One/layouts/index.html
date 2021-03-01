@@ -1,0 +1,32 @@
+{{ define "main" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+    {{ $pag := .Paginate ($filtered) }}
+	
+	
+  {{ $categories := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    {{ if $categories }}
+    <h2 class="section-title">{{ T "archives.categories" }}</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            {{ range $categories }}
+                {{ partial "article-list/tile" (dict "context" . "size" "190x100" "Type" "taxonomy") }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+	
+    <section class="article-list--compact">
+        {{ range $index, $element := $pag.Pages }}
+            {{ partial "article-list/compact" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" . }}
+{{ end }}

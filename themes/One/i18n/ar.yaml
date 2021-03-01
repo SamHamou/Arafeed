@@ -1,0 +1,44 @@
+toggleMenu:
+    other: تبديل القائمة
+
+darkMode:
+    other: الوضع المظلم
+
+
+archives:
+    categories:
+        other: الفئات
+
+article:
+    relatedContents:
+        other: المحتويات ذات الصلة
+    lastUpdatedOn:
+        other: آخر تحديث في
+
+notFound:
+    title:
+        other: غير موجود
+    subtitle:
+        other: هذه الصفحة غير موجودة.
+
+widget:
+    archives:
+        title:
+            other: أرشيف
+        more:
+            other: المزيد
+    tagCloud:
+        title:
+            other: Tags
+
+search:
+    title:
+        other: محرك البحث
+    placeholder:
+        other: اكتب شيئًا ...
+    resultTitle:
+        other: "#PAGES_COUNT صفحة (#TIME_SECONDS seconds)"
+
+footer:
+    builtWith:
+        other: الموقع يستخدم برمجية {{ .Generator }}
