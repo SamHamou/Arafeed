@@ -3,7 +3,7 @@ baseurl = "https://www.tahmil.me/"
 languageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-theme = "One"
+theme = "Tahmil"
 paginate = 6
 canonifyURLs = true
 
@@ -12,105 +12,78 @@ canonifyURLs = true
     priority = 0.9
 	filename = "map.xml"
 	
+[taxonomies]
+   category = "categories"
+   tag = "tags"
+   
 [permalinks]
-posts = "/:slug/"
-pages = "/:slug/"
-categories = "/:title/" 
-
-[params]
-mainSections = [ "posts" ]
-featuredImageField = "image"
-rssFullContent = true
-favicon = true
+  posts  = "/:slug/"
+  pages = "/:filename/"
+  categories = "/:title/" 
 
 
-  [params.footer]
-  since = 2_020
+[Author]
+  name = "Sam Hamou"
 
-  [params.dateFormat]
-  published = "Jan 02, 2006"
-  lastUpdated = "Jan 02, 2006 15:04 MST"
-
-  [params.sidebar]
-  subtitle = "موسوعة البرامج المجانية"
-
-    [params.sidebar.avatar]
-    local = true
-    src = "img/avatar.jpg"
-
-  [params.article]
-  math = false
-
-
-
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "الرئيسية"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "برامج ويندوز"
+    url = "/windows"
+    weight = 2
+  [[menu.main]]
+    name = "برامج ماكنتوش"
+    url = "/mac"
+    weight = 3
+  [[menu.main]]
+    name = "برامج أندرويد"
+    url = "/android"
+    weight = 4
+  [[menu.main]]
+    name = "برامج آيفون"
+    url = "/ios"
+    weight = 5
   
-  [params.widgets]
-  enabled = [ "search", "archives", "tag-cloud" ]
+  [[menu.footer]]
+    name = "عن الموقع"
+    url = "/about"
+    weight = 1
+  [[menu.footer]]
+    name = "أعلن معنا"
+    url = "/ads"
+    weight = 2
+  [[menu.footer]]
+    name = "إتصل بنا"
+    url = "/contact"
+    weight = 3
+   [[menu.footer]]
+    name = "سياسة الخصوصية"
+    url = "/privacy"
+    weight = 4
 
-    [params.widgets.archives]
-    limit = 5
-    path = "archives"
-
-    [params.widgets.tagCloud]
-    limit = 10
-
-[params.opengraph.twitter]
-card = "summary_large_image"
-
-[params.defaultImage.opengraph]
-enabled = false
-local = false
-
-[params.imageProcessing.cover]
-enabled = true
-
-[params.imageProcessing.content]
-enabled = true
-
-[[menu.main]]
-identifier = "home"
-name = "الرئيسية"
-url = "/"
-weight = -100
-pre = "home"
-
-[[menu.main]]
-identifier = "about"
-name = "عن الموقع"
-url = "about"
-weight = -90
-pre = "user"
-
-[[menu.main]]
-identifier = "archives"
-name = "الأرشيف"
-url = "archives"
-weight = -70
-pre = "archives"
-
-[[menu.main]]
-identifier = "search"
-name = "البحث"
-url = "search"
-weight = -60
-pre = "search"
-
-
+[Params]
+  description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
+  opengraph = true
+  twitter_cards = true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false
+  pager = false
+  post_meta = ["categories"] # Order of post meta information
+  mainSections = ["posts", "anothersection"]
   
 
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  search = "right"
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist"]
 
-[related]
-includeNewer = true
-threshold = 60
-toLower = false
-
-  [[related.indices]]
-  name = "tags"
-  weight = 100
-
-  [[related.indices]]
-  name = "categories"
-  weight = 200
-
-[markup.highlight]
-noClasses = false
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
