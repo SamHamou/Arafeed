@@ -2,9 +2,11 @@
 {{ if .Site.Taxonomies.categories }}
 <div class="bg-white panel mb-3 pb-5">
     <p class="text-xl text-center text-gray-700 py-5">أقسام الموقع</p>
+	<div class="panel-block p-2">
     {{ range $key, $value := .Site.Taxonomies.categories }}
-    <a class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900"
-        href="{{ $.Site.BaseURL }} {{ $key | urlize  }}">{{ $key | humanize }}</a>
+	
+    <a  class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900"
+        href="{{ $.Site.BaseURL }}{{ $key | urlize  }}">{{ $key | humanize }}</a>
 
     {{ end }}
 </div>
