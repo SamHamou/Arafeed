@@ -10,7 +10,7 @@ author: "Hugo Authors"
 
 <div class="content">
     <p class="mb-2">للإستفسارات والشكاوي، بإمكانكم التواصل معنا من خلال الإستمارة أدناه</p>
-    <form name=contact action=https://formspree.io/f/mayjrrko method=post>
+    <form name=contact action=https://formspree.io/f/xjvagbdn method=post>
     <div class="mb-4">
          <input type=text placeholder="الإسم" name=name class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
     </div>
