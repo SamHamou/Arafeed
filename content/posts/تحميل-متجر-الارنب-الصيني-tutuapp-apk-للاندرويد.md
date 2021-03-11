@@ -12,7 +12,7 @@ tags:
   - app china
   - toto up تحميل
 categories:
-  - sofware
+  - software
 ---
 <!--StartFragment-->
 
