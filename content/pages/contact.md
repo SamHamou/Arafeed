@@ -1,11 +1,29 @@
 ---
-title: اتصل بنا
-slug: contact
-template: page
-date: 2020-03-22T22:37:26.608Z
+title: "إتصل بنا"
+description: "Hugo, the world's fastest framework for building websites"
+date: 2019-02-30
+aliases: ["contact"]
+author: "Hugo Authors"
 ---
-سنكون سعداء جدا بالإستماع لإقتراحاتكم وملاحظاتم حول موقع تحميل والبرامج التي نقترحها على موقعنا. يمكنكم كذلك اقتراح البرامج التي تودون أن نتطرق إليها في قادم الأيام وسنحاول قدر المستطاع تلبية جميع طلباتكم.
 
-يمكنكم الإتصال بنا بواسطة إحدى الطرق التالية:
+{{< rawhtml >}}
 
-> **حسابنا على تويتر**: **[TAHMIL](https://twitter.com/Sam_Hamou)**
+<div class="content">
+    <p class="mb-2">للإستفسارات والشكاوي، بإمكانكم التواصل معنا من خلال الإستمارة أدناه</p>
+    <form name=contact action=https://formspree.io/f/mayjrrko method=post>
+    <div class="mb-4">
+         <input type=text placeholder="الإسم" name=name class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+    </div>
+    <div class="mb-4">
+        <input type=text placeholder="البريد الإلكتروني" name=mail class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+    </div>
+    <div class="mb-4">
+        <input type=text placeholder="سبب التواصل" name=title class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+    </div>
+    <div class="mb-4">
+        <textarea rows=5 cols=30 placeholder="الرسالة" name=message class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required></textarea>
+    </div>
+    <input type=submit value="إرسال" class="w-full button duration-100 py-2 bg-gray-800 text-white cursor-pointer transition-colors hover:bg-gray-600">
+    </form>
+</div>
+{{< /rawhtml >}}

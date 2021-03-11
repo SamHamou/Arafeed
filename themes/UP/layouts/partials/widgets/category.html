@@ -4,7 +4,7 @@
     <p class="text-xl text-center text-gray-700 py-5">أقسام الموقع</p>
     {{ range $key, $value := .Site.Taxonomies.categories }}
     <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800"
-        href="{{ $.Site.BaseURL }}/categories/{{ $key | urlize  }}">{{ $key | humanize }}</a>
+        href="{{ $.Site.BaseURL }}/{{ $key | urlize  }}">{{ $key | humanize }}</a>
 
     {{ end }}
 </div>
