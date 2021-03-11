@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="{{ .Site.LanguageCode | default "ar-SA" }} ">
+{{- partial "head.html" . -}}
+
+<body class="font-sans">
+    <div class="md:w-auto lg:w-auto min-h-screen flex flex-col bg-gray-100">
+        {{- partial "header.html" . -}}
+        <div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+            {{- block "main" . }}{{- end }}
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+    </div>
+</body>
+
+</html>

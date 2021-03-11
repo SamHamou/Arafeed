@@ -1,0 +1,62 @@
+{{ define "header_css" }}{{ end }}
+
+{{ define "main" }}
+<div class="grid grid-cols-3 gap-4">
+    <div class="bg-white col-span-3 lg:col-span-2 p-5">
+        <h1 class="title text-4xl">{{.Title}}</h1>
+        <aside id="meta">
+            <div>
+                <section>
+                    <div id="date"><span class="icon-access_time text-xl mr-1"></span>{{ .Date.Format "2006/01/02" }} </div>
+                </section>
+               {{ with .Params.categories }}
+            <div id="categories">
+                <span class="icon-folder text-xl mr-1"></span>
+                {{ range . }}
+                <span
+                    class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-200 justify-center h-8 px-3 text-blue-500 hover:text-black"><a
+                        href="{{ " categories" | absURL}}/{{ . | urlize }}">{{ . }}</a></span>
+                {{ end }}
+            </div>
+            {{ end }}
+            </div>
+        </aside>
+        {{ if .Params.image }}
+        <img class="my-4" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+        {{ end }}
+        <div class="content">{{.Content}}</div>
+        <hr class="py-2">
+        <aside id="meta">
+            
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    {{ with .PrevInSection }}
+                    <a class="previous lg:text-2xl" href="{{.Permalink}}">
+                        <div class="bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                            &lt; {{.Title}}
+                        </div>
+                    </a>
+                    {{ end }}
+                </div>
+                {{ with .NextInSection }}
+                <a class="next lg:text-2xl" href="{{.Permalink}}">
+                    <div class="col-span-1 bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                        {{.Title}} &gt;
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </aside>
+        <hr class="py-2">
+        <div class="mb-3">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+    {{ partial "widgets/search.html" . }}
+    {{ partial "widgets/tags.html" . }}
+	{{ partial "widgets/category.html" . }}
+    {{ partial "widgets/recent.html" . }}
+    </div>
+</div>
+{{ end }}

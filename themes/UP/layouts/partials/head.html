@@ -1,0 +1,39 @@
+<head>
+
+    {{- partial "scripts" . -}}
+		<meta name="verifywebsiteownership" content="gA71TkQbO2Os6LlCICYKZ5yXK"/>
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101278631);</script>
+        <script async src="//static.getclicky.com/js"></script>
+     <script type="text/javascript">
+            var adlinkfly_url = 'https://fc.lc/';
+            var adlinkfly_api_token = 'c120101d489af5703820410ae7ea9655465562d5';
+            var adlinkfly_advert = 2;
+            var adlinkfly_exclude_domains = ['*.tahmil.me', 'https://www.tahmil.me/'];
+        </script>
+        <script src='//fc.lc/js/full-page-script.js'></script>
+    <title>{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="{{site.Title}}">
+    {{if not .IsHome}}
+    <meta name="description" content="{{ .Description }}">
+    {{end}}
+    <link rel="shortcut icon" href="{{ "/img/favicon.ico" | relURL }}" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}" />
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      {{ $styles := resources.Get "css/blonde.css" | minify }}
+       <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+      {{ end }}
+    {{ $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+    {{ if .Site.IsServer }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    
+    {{ end }}
+
+    <link id="dark-mode-theme" rel="stylesheet" href="{{ "css/blonde.css" | relURL }}" async disabled>
+    <link href="{{ "/css/blonde.css" | relURL }}" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    {{ partial "seo/print.html" . }}
+    {{ block "header_css" . }}{{ end }}
+</head>

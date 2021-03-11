@@ -1,89 +1,77 @@
-# Site settings
+#hasCJKLanguage = true
 baseurl = "https://www.tahmil.me/"
-languageCode = "ar-SA"
+anguageCode = "ar-SA"
 DefaultContentLanguage = "ar"
 title = "تحميل"
-theme = "Tahmil"
-paginate = 6
+theme = "UP"
+author = "تحميل"
 canonifyURLs = true
 
 [sitemap]
-    changefreq = "weekly"
-    priority = 0.9
-	filename = "map.xml"
-	
-[taxonomies]
-   category = "categories"
-   tag = "tags"
-   
+  changefreq = "weekly"
+  priority = 0.9
+  filename = "map.xml"
+
 [permalinks]
-  posts  = "/:slug/"
+  posts = "/:slug/"
   pages = "/:filename/"
   categories = "/:title/" 
 
+[params]
+  description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " 
+  mainSections = [ "posts" ]
+  paginator_pages = "7"
+  tagsLimit = 15
 
-[Author]
-  name = "Sam Hamou"
+[params.widgets]
+  recentposts = false
+  archives = false
+  categories = true
+  tags = true
+  search = true
+    
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  archive = "archives"
+  
+  
+[params.post]
+  # See the Tailwind CSS documentation to set it up.
+  # Recommended settings are h-32 to h-48.
+  # https://tailwindcss.com/docs/height
+    thumbnail_height = "h-auto"
+
+  # https://tailwindcss.com/docs/width
+    thumbnail_width = "w-56"
 
 [menu]
+
   [[menu.main]]
     identifier = "home"
     name = "الرئيسية"
     url = "/"
     weight = 1
+
   [[menu.main]]
-    name = "برامج ويندوز"
-    url = "/windows"
-    weight = 2
-  [[menu.main]]
-    name = "برامج ماكنتوش"
-    url = "/mac"
-    weight = 3
-  [[menu.main]]
-    name = "برامج أندرويد"
-    url = "/android"
-    weight = 4
-  [[menu.main]]
-    name = "برامج آيفون"
-    url = "/ios"
-    weight = 5
-  
-  [[menu.footer]]
+    identifier = "about"
     name = "عن الموقع"
-    url = "/about"
-    weight = 1
-  [[menu.footer]]
-    name = "أعلن معنا"
-    url = "/ads"
+    url = "/about/"
     weight = 2
-  [[menu.footer]]
+
+  [[menu.main]]
+    identifier = "contact"
     name = "إتصل بنا"
-    url = "/contact"
+    url = "/contact/"
     weight = 3
-   [[menu.footer]]
-    name = "سياسة الخصوصية"
-    url = "/privacy"
+	
+	[[menu.main]]
+    identifier = "privacy"
+    name = "الخصوصية"
+    url = "/privacy/"
     weight = 4
 
-[Params]
-  description = "هل تتطلع إلى تنزيل إصدارات مجانية آمنة من أحدث البرامج والتطبيقات من موقع تنزيل موثوق به؟ قم بزيارتنا اليوم. " # Site description. Used in meta description
-  opengraph = true
-  twitter_cards = true
-  readmore = false # Show "Read more" button in list if true
-  authorbox = false
-  pager = false
-  post_meta = ["categories"] # Order of post meta information
-  mainSections = ["posts", "anothersection"]
-  
 
-[Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "right"  # Configure layout for list pages
-  search = "right"
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["search", "recent", "taglist"]
+[build]
+  writeStats = true
 
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
