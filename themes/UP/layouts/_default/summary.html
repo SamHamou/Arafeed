@@ -2,7 +2,7 @@
     {{ if .Params.thumbnail }}
     <img alt="thumbnail" id="thumb" class="md:w-56 lg:w-56 lg:h-auto" src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
     {{ else }}
-    <img alt="thumbnail" id="thumb" class="{{ .Site.Params.post.thumbnail_width }} lg:{{ .Site.Params.post.thumbnail_height }}" src="{{ "/img/default.jpg" | relURL }}">
+    <img alt="thumbnail" id="thumb" class="md:w-56 lg:w-56 lg:h-auto" src="{{ "/img/default.jpg" | relURL }}">
     {{ end }}
     <div
         class="bg-white pl-4 p-2 flex flex-col justify-between leading-normal max-w-full w-full">
