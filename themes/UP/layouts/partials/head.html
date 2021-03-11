@@ -1,6 +1,5 @@
 <head>
 
-    {{- partial "scripts" . -}}
 		<meta name="verifywebsiteownership" content="gA71TkQbO2Os6LlCICYKZ5yXK"/>
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101278631);</script>
         <script async src="//static.getclicky.com/js"></script>
@@ -35,5 +34,6 @@
     <link href="{{ "/css/blonde.css" | relURL }}" rel="stylesheet" type="text/css" media="print"
         onload="this.media='all'">
     {{ partial "seo/print.html" . }}
+	{{ partial "scripts.html" . }}
     {{ block "header_css" . }}{{ end }}
 </head>
