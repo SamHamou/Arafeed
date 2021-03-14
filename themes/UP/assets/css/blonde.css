@@ -509,7 +509,8 @@ img {
 }
 
 .ml-auto {
-  margin-right: auto
+  margin-right: auto;
+  font-size: small;
 }
 
 .max-w-full {
